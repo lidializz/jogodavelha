@@ -1,0 +1,1 @@
+INDEX VERSION 1.126+/home/lidializz/Área de Trabalho/V0.1-Interface/TicTacToe(v0.1.0)/src/.metadata/.plugins/org.eclipse.jdt.core
