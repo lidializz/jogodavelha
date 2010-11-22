@@ -4,9 +4,9 @@
 Versão	  When				What				Why					 Who		   How
 	
 0.1.0	21/11/10	1. Selecionar tipo de interface	  O jogador deve escolher o tipo de interface		Lídia		Umbrello/Java
-0.2.0	21/11/10	2. Selecionar Oponente humano	  O jogador deve escolher o tipo de oponente		Josiane		Umbrello/Java
-0.3.0	21/11/10	3. Iniciar partida		  Possibilita o jogador iniciar uma partida		William		Umbrello/Java
-0.4.0	21/11/10	4. Jogar			  Para que o jogador possa realizar uma jogada		Lídia		Umbrello/Java
+0.2.0	22/11/10	2. Selecionar Oponente humano	  O jogador deve escolher o tipo de oponente		Josiane		Umbrello/Java
+0.3.0	22/11/10	3. Iniciar partida		  Possibilita o jogador iniciar uma partida		William		Umbrello/Java
+0.4.0	22/11/10	4. Jogar			  Para que o jogador possa realizar uma jogada		Lídia		Umbrello/Java
 
 
 0.5.0	22/11/10	5. Selecionar Oponente robô	  O jogador deve escolher o tipo de oponente		Josiane		Umbrello/Java

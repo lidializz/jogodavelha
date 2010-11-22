@@ -4,18 +4,27 @@ import java.util.Scanner; //Pra poder ler a entrada do console
 
 public class Fronteira {
 
-	public static Controle controle = new Controle();
+	
+/**
+ * Class Fronteira
+ */
+public class Fronteira {
+
+ public static Controle controle = new Controle();
 	static MenuJogoVelha menu = new MenuJogoVelha();
 	static Scanner input = new Scanner(System.in);
 
-	
-	public static void imprimirTabuleiro(char matriz[][]) {
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5; j++) {
-				System.out.print(matriz[i][j]);
-			}
-			System.out.println();
-		}
+  public Fronteira () { };
+  
+ 
+	public static boolean verificarPosicaoInvalida(int i, int j) {
+		if ((i == 1 && j == 1) || (i == 1 && j == 2) || (i == 1 && j == 3)
+				|| (i == 2 && j == 1) || (i == 2 && j == 2)
+				|| (i == 2 && j == 3) || (i == 3 && j == 1)
+				|| (i == 3 && j == 2) || (i == 3 && j == 3))
+			return false;
+		else
+			return true;
 	}
 	
 	public static void gerarMenuInterface(){
@@ -98,6 +107,19 @@ public class Fronteira {
 
 		} while (opcao != MenuJogoVelha.VOLTAR);
 	}
+	
+	
+
+	public static void imprimirTabuleiro(char matriz[][]) {
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				System.out.print(matriz[i][j]);
+			}
+			System.out.println();
+		}
+	}
+	
+
 
 	public static void iniciarPartida(int opcao) {
 
@@ -107,16 +129,60 @@ public class Fronteira {
 		else
 			jogarRobo();
 	}
+
 	
 	
 	
-	public static void jogarHumano(){
+	public static void jogarHumano() {
+		int i, j;
+		char simbolo = 'x';
+		Controle.iniciarTabuleiro();
+		while ((controle.jogoTerminado() != true)
+				&& (controle.verificaTabuleiroCheio() != true)) {
+			imprimirTabuleiro(Controle.getMatriz());
+
+			if (simbolo == 'x')
+				System.out.println("\n\nJogador 1\n");
+			else
+				System.out.println("\n\nJogador 2\n");
+
+			System.out.println("Digite a linha e a coluna de sua jogada: ");
+			i = input.nextInt();
+			j = input.nextInt();
+
+			if (jogar(i, j, simbolo)) {
+				if (simbolo == 'x')
+					simbolo = 'o';
+				else
+					simbolo = 'x';
+			}
+		}
 		imprimirTabuleiro(Controle.getMatriz());
+
+		
+
 	}
 
-	public static void jogarRobo(){
+	public static void jogarRobo() {
+
 		
 	}
+	
+	public static boolean jogar(int i, int j, char simbolo) {
+
+		if (verificarPosicaoInvalida(i, j) == false) {
+			if (controle.posicaoOcupada(i, j) == false) {
+				controle.fazerJogada(i, j, simbolo);
+				return true;
+			} else
+				System.out
+						.println("\n\nPosicao ja ocupada! Jogue novamente...\n\n");
+			return false;
+		} else
+			System.out.println("\n\nPosicao invalida\n\n");
+		return false;
+	}
+
 
 	public static void main(String[] args) {
 
