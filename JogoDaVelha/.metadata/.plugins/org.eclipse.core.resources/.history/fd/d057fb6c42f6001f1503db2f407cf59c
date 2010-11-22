@@ -4,18 +4,13 @@ import java.util.Scanner; //Pra poder ler a entrada do console
 
 public class Fronteira {
 
-	public static Controle controle = new Controle();
+	
 	static MenuJogoVelha menu = new MenuJogoVelha();
 	static Scanner input = new Scanner(System.in);
 
 	
-	public static void imprimirTabuleiro(char matriz[][]) {
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5; j++) {
-				System.out.print(matriz[i][j]);
-			}
-			System.out.println();
-		}
+	public static void iniciaTabuleiro() {
+		controle.iniciaTabuleiro();
 	}
 	
 	public static void gerarMenuInterface(){
@@ -101,17 +96,15 @@ public class Fronteira {
 
 	public static void iniciarPartida(int opcao) {
 
-		Controle.iniciarTabuleiro();
+		iniciarTabuleiro();
 		if (opcao == 1)
 			jogarHumano();
 		else
 			jogarRobo();
 	}
 	
-	
-	
 	public static void jogarHumano(){
-		imprimirTabuleiro(Controle.getMatriz());
+		
 	}
 
 	public static void jogarRobo(){
