@@ -151,7 +151,7 @@ public class Fronteira {
 			}
 		}
 		imprimirTabuleiro(Controle.getMatriz());
-		if (controle.jogoTerminado() == true)
+		if (Controle.verificarVencedor() == true)
 			if (simbolo == 'x')
 				System.out.println("\nO jogador 2 venceu!\n");
 			else

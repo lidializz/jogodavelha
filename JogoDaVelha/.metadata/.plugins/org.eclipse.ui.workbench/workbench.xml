@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="16" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
 <window height="743" maximized="true" width="1016" x="0" y="25">
 <fastViewData fastViewLocation="1024">
@@ -10,14 +10,14 @@
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="100" y="34"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="100" y="30"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="116" y="34"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="100" y="34"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="34"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="116" y="34"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="116" y="30"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="100" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="74" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="118" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="172" y="34"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="176" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -37,21 +37,21 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Fronteira.java" partName="Fronteira.java" path="/home/lidializz/jogodavelha/JogoDaVelha/src/jogo_velha/Fronteira.java" title="Fronteira.java" tooltip="src/jogo_velha/Fronteira.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Fronteira.java" partName="Fronteira.java" path="/home/william/jogodavelha/JogoDaVelha/src/jogo_velha/Fronteira.java" title="Fronteira.java" tooltip="src/jogo_velha/Fronteira.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/src/jogo_velha/Fronteira.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3012" selectionTopPixel="1636"/>
+<editorState selectionHorizontalPixel="0" selectionLength="21" selectionOffset="3739" selectionTopPixel="2713"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuJogoVelha.java" partName="MenuJogoVelha.java" path="/home/lidializz/jogodavelha/JogoDaVelha/src/jogo_velha/MenuJogoVelha.java" title="MenuJogoVelha.java" tooltip="src/jogo_velha/MenuJogoVelha.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuJogoVelha.java" partName="MenuJogoVelha.java" path="/home/william/jogodavelha/JogoDaVelha/src/jogo_velha/MenuJogoVelha.java" title="MenuJogoVelha.java" tooltip="src/jogo_velha/MenuJogoVelha.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/src/jogo_velha/MenuJogoVelha.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="110" selectionOffset="351" selectionTopPixel="281"/>
+<editorState selectionHorizontalPixel="0" selectionLength="33" selectionOffset="1232" selectionTopPixel="299"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Controle.java" partName="Controle.java" path="/home/lidializz/jogodavelha/JogoDaVelha/src/jogo_velha/Controle.java" title="Controle.java" tooltip="src/jogo_velha/Controle.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Controle.java" partName="Controle.java" path="/home/william/jogodavelha/JogoDaVelha/src/jogo_velha/Controle.java" title="Controle.java" tooltip="src/jogo_velha/Controle.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/src/jogo_velha/Controle.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="237" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="91" selectionOffset="728" selectionTopPixel="197"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Entidade.java" partName="Entidade.java" path="/home/lidializz/jogodavelha/JogoDaVelha/src/jogo_velha/Entidade.java" title="Entidade.java" tooltip="src/jogo_velha/Entidade.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Entidade.java" partName="Entidade.java" path="/home/william/jogodavelha/JogoDaVelha/src/jogo_velha/Entidade.java" title="Entidade.java" tooltip="src/jogo_velha/Entidade.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/src/jogo_velha/Entidade.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="16" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="840" selectionOffset="1655" selectionTopPixel="945"/>
 </editor>
 </editors>
 <views>
@@ -190,7 +190,7 @@
 <info part="org.eclipse.ui.editorss" ratio="0.15845071" ratioLeft="90" ratioRight="478" relationship="2" relative="org.eclipse.gef.ui.palette_view"/>
 <info part="org.eclipse.ve.internal.java.codegen.editorpart.BeansList" ratio="0.5" ratioLeft="300" ratioRight="300" relationship="4" relative="left"/>
 </mainWindow>
-<hiddenWindow height="757" width="1282" x="0" y="24">
+<hiddenWindow height="750" width="1280" x="0" y="25">
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
@@ -206,161 +206,156 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/src/jogo_velha/MenuJogoVelha.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/src/jogo_velha/Controle.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/src/jogo_velha/Entidade.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/src/jogo_velha/Entidade.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/src/jogo_velha/Fronteira.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/src/jogo_velha/MenuJogoVelha.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/src/jogo_velha/Entidade.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/src/jogo_velha/Fronteira.java"/>
 </editors>
-<item historyLabel="Entidade.java" index="3">
-<position info="not_deleted" x="833" y="0"/>
-</item>
-<item historyLabel="Fronteira.java" index="0">
-<position info="not_deleted" x="3278" y="0"/>
+<item historyLabel="MenuJogoVelha.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="MenuJogoVelha.java" index="1">
-<position info="not_deleted" x="351" y="110"/>
+<position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="366" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="3">
-<position info="not_deleted" x="833" y="0"/>
-</item>
-<item historyLabel="Fronteira.java" index="0">
-<position info="not_deleted" x="3278" y="0"/>
-</item>
-<item historyLabel="MenuJogoVelha.java" index="1">
-<position info="not_deleted" x="351" y="110"/>
+<position info="not_deleted" x="824" y="0"/>
 </item>
 <item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="366" y="0"/>
+<position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="Entidade.java" index="3">
-<position info="not_deleted" x="833" y="0"/>
+<position info="not_deleted" x="2508" y="0"/>
 </item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="315" y="0"/>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="Fronteira.java" index="0">
-<position info="not_deleted" x="3691" y="0"/>
+<position/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3470" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="821" y="0"/>
+</item>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="2502" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="821" y="0"/>
+</item>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="2502" y="0"/>
+</item>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="2501" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="821" y="0"/>
 </item>
 <item historyLabel="MenuJogoVelha.java" index="1">
-<position info="not_deleted" x="351" y="110"/>
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3693" y="0"/>
 </item>
 <item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="315" y="0"/>
+<position info="not_deleted" x="821" y="0"/>
+</item>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="2501" y="0"/>
+</item>
+<item historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3040" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="821" y="0"/>
+</item>
+<item historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3040" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="821" y="0"/>
+</item>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="2501" y="0"/>
+</item>
+<item historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3040" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="821" y="0"/>
+</item>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="2501" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="821" y="0"/>
+</item>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="2501" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="820" y="0"/>
+</item>
+<item historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3024" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="820" y="0"/>
+</item>
+<item historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3024" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="820" y="0"/>
+</item>
+<item historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3024" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="820" y="0"/>
+</item>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="2501" y="0"/>
+</item>
+<item historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3011" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="820" y="0"/>
+</item>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="2501" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="820" y="0"/>
+</item>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="2501" y="0"/>
+</item>
+<item historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3011" y="0"/>
+</item>
+<item historyLabel="Controle.java" index="2">
+<position info="not_deleted" x="728" y="91"/>
+</item>
+<item historyLabel="Entidade.java" index="3">
+<position info="not_deleted" x="1655" y="840"/>
+</item>
+<item historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3739" y="21"/>
 </item>
 <item historyLabel="MenuJogoVelha.java" index="1">
-<position info="not_deleted" x="351" y="110"/>
+<position info="not_deleted" x="1232" y="33"/>
 </item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="315" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position info="not_deleted" x="1684" y="0"/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="474" y="0"/>
-</item>
-<item historyLabel="Fronteira.java" index="5">
-<position info="not_deleted" x="3468" y="0"/>
-</item>
-<item historyLabel="MenuJogoVelha.java" index="6">
-<position info="not_deleted" x="351" y="110"/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="374" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position info="not_deleted" x="1684" y="0"/>
-</item>
-<item historyLabel="Fronteira.java" index="5">
-<position info="not_deleted" x="3012" y="0"/>
-</item>
-<item historyLabel="MenuJogoVelha.java" index="6">
-<position info="not_deleted" x="351" y="110"/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="374" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="662" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="662" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="662" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position info="not_deleted" x="758" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position info="not_deleted" x="564" y="0"/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="662" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position info="not_deleted" x="564" y="0"/>
-</item>
-<item historyLabel="Fronteira.java" index="5">
-<position info="not_deleted" x="3012" y="0"/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="227" y="88"/>
-</item>
-<item historyLabel="Fronteira.java" index="5">
-<position info="not_deleted" x="3012" y="0"/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="227" y="88"/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position info="not_deleted" x="71" y="0"/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="227" y="88"/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position info="not_deleted" x="71" y="0"/>
-</item>
-<item historyLabel="Fronteira.java" index="5">
-<position info="not_deleted" x="3012" y="0"/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="369" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="4">
-<position info="not_deleted" x="71" y="0"/>
-</item>
-<item historyLabel="Fronteira.java" index="5">
-<position info="not_deleted" x="3012" y="0"/>
-</item>
-<item historyLabel="Controle.java" index="2">
-<position info="not_deleted" x="369" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="7">
-<position info="not_deleted" x="45" y="0"/>
-</item>
-<item historyLabel="Entidade.java" index="7">
-<position/>
-</item>
-<item active="true" historyLabel="Fronteira.java" index="8">
-<position info="not_deleted" x="3012" y="0"/>
+<item active="true" historyLabel="Fronteira.java" index="0">
+<position info="not_deleted" x="3739" y="21"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -368,6 +363,12 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="right"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>

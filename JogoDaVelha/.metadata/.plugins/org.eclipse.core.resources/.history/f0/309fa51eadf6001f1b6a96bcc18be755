@@ -16,16 +16,16 @@ public class Controle {
 	}
 
 	public boolean jogoTerminado() {
-		if (Entidade.verificarGanhador() == true)
-			return true;
-		else
-			return false;
+
+		return false;
 
 	}
 
+	
 	public void fazerJogada(int i, int j, char simbolo) {
 		entidade.marcarJogada(i, j, simbolo);
 	}
+
 
 	public boolean posicaoOcupada(int i, int j) {
 		if (entidade.verificaPosicaoOcupada(i, j) == true)
@@ -39,6 +39,7 @@ public class Controle {
 			return true;
 		else
 			return false;
+
 	}
-	
+
 }

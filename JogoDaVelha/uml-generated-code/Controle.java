@@ -5,48 +5,102 @@
  */
 public class Controle {
 
+  //
+  // Fields
+  //
 
+  
+  //
+  // Constructors
+  //
   public Controle () { };
   
-  static char[][] matriz = new char[5][5];
+  //
+  // Methods
+  //
 
-	static Entidade entidade = new Entidade();
 
-	public static char[][] getMatriz() {
-		matriz = Entidade.getMatriz();
+  //
+  // Accessor methods
+  //
+
+  //
+  // Other methods
+  //
+
+  /**
+   */
+  public static void iniciarTabuleiro(  )
+  {
+	Entidade.inicializarTabuleiro(getMatriz());
+  }
+
+
+  /**
+   * @return       char
+   */
+  public static char getMatriz(  )
+  {
+	matriz = Entidade.getMatriz();
 		return matriz;
-	}
-
-	public static void iniciarTabuleiro() {
-		Entidade.inicializarTabuleiro(getMatriz());
-	}
-
-	public boolean jogoTerminado() {
-
-		return false;
-
-	}
-
-	
-	public void fazerJogada(int i, int j, char simbolo) {
-		entidade.marcarJogada(i, j, simbolo);
-	}
+  }
 
 
-	public boolean posicaoOcupada(int i, int j) {
-		if (entidade.verificaPosicaoOcupada(i, j) == true)
+  /**
+   * @return       boolean
+   */
+  public boolean jogoTerminado(  )
+  {
+	if (Entidade.verificarGanhador() == true)
+			return true;
+		else
+			return false;
+  }
+
+
+  /**
+   */
+  public void jogaRobo(  )
+  {
+  }
+
+
+  /**
+   * @param        i
+   * @param        j
+   * @param        simbolo
+   */
+  public void fazerJogada( int i, int j, char simbolo )
+  {
+	entidade.marcarJogada(i, j, simbolo);
+  }
+
+
+  /**
+   * @return       boolean
+   * @param        i
+   * @param        j
+   */
+  public boolean posicaoOcupada( int i, int j )
+  {
+	if (entidade.verificaPosicaoOcupada(i, j) == true)
+			return true;
+		else
+			return false;
+  }
+
+
+  /**
+   * @return       boolean
+   */
+  public boolean verificaTabuleiroCheio(  )
+  {
+	if (entidade.verificaTabuleiroOcupado() == true)
 			return true;
 		else
 			return false;
 	}
-
-	public boolean verificaTabuleiroCheio() {
-		if (entidade.verificaTabuleiroOcupado() == true)
-			return true;
-		else
-			return false;
-
-	}
+  }
 
 
 }

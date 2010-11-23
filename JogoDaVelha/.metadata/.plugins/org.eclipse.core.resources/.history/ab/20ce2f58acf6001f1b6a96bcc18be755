@@ -151,13 +151,6 @@ public class Fronteira {
 			}
 		}
 		imprimirTabuleiro(Controle.getMatriz());
-		if (controle.jogoTerminado() == true)
-			if (simbolo == 'x')
-				System.out.println("\nO jogador 2 venceu!\n");
-			else
-				System.out.println("\nO jogador 1 venceu!\n");
-		else
-			System.out.println("\nVelhouuu :p!\n");
 
 		
 
@@ -182,8 +175,8 @@ public class Fronteira {
 			System.out.println("\n\nPosicao invalida\n\n");
 		return false;
 	}
-	
-	
+
+
 	public static void main(String[] args) {
 
 		gerarMenuPrincipal();
