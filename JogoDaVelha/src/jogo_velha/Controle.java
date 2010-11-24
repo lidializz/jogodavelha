@@ -15,8 +15,16 @@ public class Controle {
 		Entidade.inicializarTabuleiro(getMatriz());
 	}
 
-	public boolean jogoTerminado() {
-		if (Entidade.verificarGanhador() == true)
+	public boolean verificarRoboVencedor() {
+		if (Entidade.verificarRoboGanhador() == true)
+			return true;
+		else
+			return false;
+
+	}
+	
+	public boolean verificarJogoTerminado() {
+		if (Entidade.verificarFimJogo() == true)
 			return true;
 		else
 			return false;
@@ -34,11 +42,15 @@ public class Controle {
 			return false;
 	}
 
-	public boolean verificaTabuleiroCheio() {
-		if (entidade.verificaTabuleiroOcupado() == true)
+	public boolean verificarTabuleiroCheio() {
+		if (entidade.verificarTabuleiroOcupado() == true)
 			return true;
 		else
 			return false;
+	}
+	
+	public void jogarRobo() {
+		entidade.realizarJogadaRobo();
 	}
 	
 }

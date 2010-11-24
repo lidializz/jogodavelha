@@ -1,5 +1,7 @@
 package jogo_velha;
 
+import java.util.Random;
+
 public class Entidade {
 
 	static char[][] matriz = new char[5][5];
@@ -49,7 +51,7 @@ public class Entidade {
 			return false;
 	}
 
-	public boolean verificaTabuleiroOcupado() {// vai verificar se o
+	public boolean verificarTabuleiroOcupado() {// vai verificar se o
 		// tabuleiro esta
 		// todo ocupado (Forca Bruta)
 		if ((matriz[0][0] == 'o' || matriz[0][0] == 'x')
@@ -66,7 +68,7 @@ public class Entidade {
 			return false;
 	}
 	
-	public static boolean verificarGanhador(){
+	public static boolean verificarFimJogo(){
 		if (((matriz[0][0] != ' ') && (matriz[0][0] == matriz[0][2]) && (matriz[0][2] == matriz[0][4]))
 					|| ((matriz[2][0] != ' ') && (matriz[2][0] == matriz[2][2]) && (matriz[2][2] == matriz[2][4]))
 					|| ((matriz[4][0] != ' ') && (matriz[4][0] == matriz[4][2]) && (matriz[4][2] == matriz[4][4]))
@@ -81,6 +83,35 @@ public class Entidade {
 				return false;
 
 		}
+	
+
+	public static boolean verificarRoboGanhador() {
+		if (((matriz[0][0] == 'o') && (matriz[0][0] == matriz[0][2]) && (matriz[0][2] == matriz[0][4]))
+				|| ((matriz[2][0] == 'o') && (matriz[2][0] == matriz[2][2]) && (matriz[2][2] == matriz[2][4]))
+				|| ((matriz[4][0] == 'o') && (matriz[4][0] == matriz[4][2]) && (matriz[4][2] == matriz[4][4]))
+				|| ((matriz[0][0] == 'o') && (matriz[0][0] == matriz[2][0]) && (matriz[2][0] == matriz[4][0]))
+				|| ((matriz[0][2] == 'o') && (matriz[0][2] == matriz[2][2]) && (matriz[2][2] == matriz[4][2]))
+				|| ((matriz[0][4] == 'o') && (matriz[0][4] == matriz[2][4]) && (matriz[2][4] == matriz[4][4]))
+				|| ((matriz[0][0] == 'o') && (matriz[0][0] == matriz[2][2]) && (matriz[2][2] == matriz[4][4]))
+				|| ((matriz[4][0] == 'o') && (matriz[4][0] == matriz[2][2]) && (matriz[2][2] == matriz[0][4])))
+
+			return true;
+		else
+			return false;
+
+	}
+	public void realizarJogadaRobo() {
+		Random r = new Random();
+		int i = (0 + r.nextInt(3)) + 1;
+		int j = (0 + r.nextInt(3)) + 1;
+
+		while (verificaPosicaoOcupada(i, j) != false) {
+			i = (0 + r.nextInt(3)) + 1;
+			j = (0 + r.nextInt(3)) + 1;
+		}
+		marcarJogada(i, j, 'o');
+		
+	}
 }
 
 	

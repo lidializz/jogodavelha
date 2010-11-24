@@ -25,9 +25,16 @@ public class MenuJogoVelha {
 											 "3 - Voltar\n";
 	
 	private static String menuOponente = "\nEscolha o tipo de oponente:\n" + 
-	 "1 - Oponente Humano\n" + 
-	 "2 - Oponente Robo\n"+ 
-	 "3 - Voltar\n";
+	 										"1 - Oponente Humano\n" + 
+	 										"2 - Oponente Robo\n"+ 
+	 										"3 - Voltar\n";
+	
+	private static String menuNiveis = "\nEscolha o tipo de nivel:\n" + 
+	   										"1 - Facil\n" + 
+	   										"2 - Medio\n"+ 
+	   										"3 - Dificil\n" +
+	   										"4 - Voltar\n";
+
 
 	
 	
@@ -44,6 +51,11 @@ public class MenuJogoVelha {
 	public static void mostrarMenuOponente() {
 
 		System.out.println(menuOponente);
+	}
+	
+	public static void displayNiveis() {
+
+		System.out.println(menuNiveis);
 	}
 	
 

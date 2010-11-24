@@ -87,6 +87,7 @@ public class Fronteira {
 				break;
 
 			case MenuJogoVelha.OPONENTE_ROBO:
+				iniciarPartida(2);
 				break;
 
 			case MenuJogoVelha.VOLTAR:
@@ -112,7 +113,7 @@ public class Fronteira {
 		}
 	}
 	
-
+	
 
 	public static void iniciarPartida(int opcao) {
 
@@ -122,16 +123,14 @@ public class Fronteira {
 		else
 			jogarRobo();
 	}
-
-	
 	
 	
 	public static void jogarHumano() {
 		int i, j;
 		char simbolo = 'x';
 		Controle.iniciarTabuleiro();
-		while ((controle.jogoTerminado() != true)
-				&& (controle.verificaTabuleiroCheio() != true)) {
+		while ((controle.verificarJogoTerminado() != true)
+				&& (controle.verificarTabuleiroCheio() != true)) {
 			imprimirTabuleiro(Controle.getMatriz());
 
 			if (simbolo == 'x')
@@ -151,7 +150,7 @@ public class Fronteira {
 			}
 		}
 		imprimirTabuleiro(Controle.getMatriz());
-		if (controle.jogoTerminado() == true)
+		if (controle.verificarJogoTerminado() == true)
 			if (simbolo == 'x')
 				System.out.println("\nO jogador 2 venceu!\n");
 			else
@@ -159,14 +158,43 @@ public class Fronteira {
 		else
 			System.out.println("\nVelhouuu :p!\n");
 
-		
-
 	}
 
 	public static void jogarRobo() {
 
-		
+		int i, j;
+		char simbolo = 'x';
+		Controle.iniciarTabuleiro();
+		while ((controle.verificarJogoTerminado() != true)
+				&& (controle.verificarTabuleiroCheio() != true)) {
+			imprimirTabuleiro(Controle.getMatriz());
+			System.out.println("\n\nJogador Humano\n");
+
+			System.out.println("Digite a linha e a coluna de sua jogada: ");
+			i = input.nextInt();
+			j = input.nextInt();
+
+			if (jogar(i, j, simbolo)) {
+				if ((controle.verificarTabuleiroCheio() != true)
+						&& (controle.verificarJogoTerminado() != true))
+					controle.jogarRobo();
+			}
+		}
+
+		imprimirTabuleiro(Controle.getMatriz());
+		if (controle.verificarJogoTerminado() == true) {
+			if (controle.verificarRoboVencedor() == true)
+				System.out.println("\nO jogador computador venceu!\n");
+			else
+				System.out.println("\nO jogador humano venceu!\n");
+		} else
+			System.out.println("\nVelhouuu :p!\n");
+
+		//reiniciar();
 	}
+	
+	
+
 	
 	public static boolean jogar(int i, int j, char simbolo) {
 
