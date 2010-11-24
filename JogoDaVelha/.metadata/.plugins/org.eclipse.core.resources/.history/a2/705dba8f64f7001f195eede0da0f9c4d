@@ -173,8 +173,6 @@ public class Fronteira {
 				System.out.println("\nO jogador 1 venceu!\n");
 		else
 			System.out.println("\nVelhouuu :p!\n");
-		
-		reiniciar();
 
 	}
 
@@ -208,7 +206,7 @@ public class Fronteira {
 		} else
 			System.out.println("\nVelhouuu :p!\n");
 
-		reiniciar();
+		//reiniciar();
 	}
 	
 	

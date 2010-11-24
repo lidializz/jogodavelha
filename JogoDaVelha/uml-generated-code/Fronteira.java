@@ -155,6 +155,22 @@ public class Fronteira {
   }
 
 
+	public static void reiniciar() { // neste metodo o jogador pode escolher pra
+		// qual menu voltar
+		int k = 3;
+		System.out
+				.println("Digite 0 para voltar ao menu principal ou 1 para iniciar uma nova partida");
+		k = input.nextInt();
+		while ((k != 0) && (k != 1)) {
+			System.out.println("Opcao inexistente! Tente novamente...");
+			k = input.nextInt();
+		}
+		if (k == 0){
+			gerarMenuPrincipal();
+			System.exit(0);
+		}
+	}
+
   /**
    */
   public static void jogarHumano(  )
@@ -190,21 +206,46 @@ public class Fronteira {
 				System.out.println("\nO jogador 1 venceu!\n");
 		else
 			System.out.println("\nVelhouuu :p!\n");
+
+		reiniciar();
   }
 
 
   /**
    */
-  public static void jogarRobo(  )
-  {
-  }
+public static void jogarRobo() {
 
+		int i, j;
+		char simbolo = 'x';
+		Controle.iniciarTabuleiro();
+		while ((controle.verificarJogoTerminado() != true)
+				&& (controle.verificarTabuleiroCheio() != true)) {
+			imprimirTabuleiro(Controle.getMatriz());
+			System.out.println("\n\nJogador Humano\n");
 
-  /**
-   * @return       boolean
-   * @param        i
-   * @param        j
-   */
+			System.out.println("Digite a linha e a coluna de sua jogada: ");
+			i = input.nextInt();
+			j = input.nextInt();
+
+			if (jogar(i, j, simbolo)) {
+				if ((controle.verificarTabuleiroCheio() != true)
+						&& (controle.verificarJogoTerminado() != true))
+					controle.jogarRobo();
+			}
+		}
+
+		imprimirTabuleiro(Controle.getMatriz());
+		if (controle.verificarJogoTerminado() == true) {
+			if (controle.verificarRoboVencedor() == true)
+				System.out.println("\nO jogador computador venceu!\n");
+			else
+				System.out.println("\nO jogador humano venceu!\n");
+		} else
+			System.out.println("\nVelhouuu :p!\n");
+
+		reiniciar();
+	} 
+
   public static boolean verificarPosicaoInvalida( int i, int j )
   {
 	if ((i == 1 && j == 1) || (i == 1 && j == 2) || (i == 1 && j == 3)

@@ -9,11 +9,11 @@ Versão	  When				What				Why					 Who		   How
 0.4.0	22/11/10	4. Jogar			  Para que o jogador possa realizar uma jogada		Lídia		Umbrello/Java
 
 
-0.6.0	22/11/10	5. Finalizar partida		  A partida deve ser finalizada após um dos
+0.5.0	22/11/10	5. Finalizar partida		  A partida deve ser finalizada após um dos
 							  jogadores vencer ou empatar				William		Umbrello/Java
-0.5.0	22/11/10	6. Selecionar Oponente robô	  O jogador deve escolher o tipo de oponente		Josiane		Umbrello/Java
-0.7.0	22/11/10	7. Reiniciar partida		  O jogador poderá iniciar uma nova partida 		Lídia		Umbrello/Java
-0.8.0	22/11/10	8. Selecionar nível do jogo	  O jogador deve escolher o nível do jogo		Josiane		Umbrello/Java
+0.6.0	23/11/10	6. Selecionar Oponente robô	  O jogador deve escolher o tipo de oponente		Josiane		Umbrello/Java
+0.7.0	23/11/10	7. Reiniciar partida		  O jogador poderá iniciar uma nova partida 		Lídia		Umbrello/Java
+0.8.0	23/11/10	8. Selecionar nível do jogo	  O jogador deve escolher o nível do jogo		William  	Umbrello/Java
 
 
 *Cada versão corresponde a um caso de uso, enumerado de acordo com a enumeração que está no umbrello.

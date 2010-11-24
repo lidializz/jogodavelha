@@ -208,7 +208,7 @@ public class Fronteira {
 		} else
 			System.out.println("\nVelhouuu :p!\n");
 
-		reiniciar();
+		//reiniciar();
 	}
 	
 	

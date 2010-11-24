@@ -125,22 +125,6 @@ public class Fronteira {
 	}
 	
 	
-	public static void reiniciar() { // neste metodo o jogador pode escolher pra
-		// qual menu voltar
-		int k = 3;
-		System.out
-				.println("Digite 0 para voltar ao menu principal ou 1 para iniciar uma nova partida");
-		k = input.nextInt();
-		while ((k != 0) && (k != 1)) {
-			System.out.println("Opcao inexistente! Tente novamente...");
-			k = input.nextInt();
-		}
-		if (k == 0){
-			gerarMenuPrincipal();
-			System.exit(0);
-		}
-	}
-	
 	public static void jogarHumano() {
 		int i, j;
 		char simbolo = 'x';
@@ -173,8 +157,6 @@ public class Fronteira {
 				System.out.println("\nO jogador 1 venceu!\n");
 		else
 			System.out.println("\nVelhouuu :p!\n");
-		
-		reiniciar();
 
 	}
 
@@ -208,7 +190,7 @@ public class Fronteira {
 		} else
 			System.out.println("\nVelhouuu :p!\n");
 
-		reiniciar();
+		//reiniciar();
 	}
 	
 	
