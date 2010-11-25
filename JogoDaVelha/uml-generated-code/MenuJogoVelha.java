@@ -51,5 +51,11 @@ public class MenuJogoVelha {
 	System.out.println(menuOponente);
   }
 
+  /**
+   */
+  public static void displayNiveis() {
+
+		System.out.println(menuNiveis);
+  }
 
 }

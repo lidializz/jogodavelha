@@ -8,8 +8,6 @@ public class Fronteira {
 	static MenuJogoVelha menu = new MenuJogoVelha();
 	static Scanner input = new Scanner(System.in);
 
-
-	
 	public static boolean verificarPosicaoInvalida(int i, int j) {
 		if ((i == 1 && j == 1) || (i == 1 && j == 2) || (i == 1 && j == 3)
 				|| (i == 2 && j == 1) || (i == 2 && j == 2)
@@ -19,8 +17,8 @@ public class Fronteira {
 		else
 			return true;
 	}
-	
-	public static void gerarMenuInterface(){
+
+	public static void gerarMenuInterface() {
 		int opcao;
 		do {
 			MenuJogoVelha.mostrarMenuInterface();
@@ -47,7 +45,6 @@ public class Fronteira {
 			}
 		} while (opcao != MenuJogoVelha.VOLTAR);
 	}
-	
 
 	public static void gerarMenuPrincipal() {
 
@@ -72,7 +69,7 @@ public class Fronteira {
 			}
 		} while (opcao != MenuJogoVelha.SAIR);
 	}
-	
+
 	public static void gerarMenuOponente() {
 		int opcao;
 
@@ -87,7 +84,7 @@ public class Fronteira {
 				break;
 
 			case MenuJogoVelha.OPONENTE_ROBO:
-				iniciarPartida(2);
+				gerarMenuNivelJogo();
 				break;
 
 			case MenuJogoVelha.VOLTAR:
@@ -101,8 +98,37 @@ public class Fronteira {
 
 		} while (opcao != MenuJogoVelha.VOLTAR);
 	}
-	
-	
+
+	public static void gerarMenuNivelJogo() {// Jogador escolhe o nivel do jogo
+												// em que
+		// quer jogar
+
+		int opcao;
+
+		do {
+			MenuJogoVelha.displayNiveis();
+			opcao = input.nextInt();
+
+			switch (opcao) {
+			case MenuJogoVelha.FACIL:
+				iniciarPartida(2);
+				break;
+
+			case MenuJogoVelha.DIFICIL:
+				iniciarPartida(3);
+				break;
+
+			case MenuJogoVelha.VOLTARNIVEL:
+				break;
+
+			default:
+				System.out.println("OPCAO INVALIDA!");
+				break;
+			}
+
+		} while (opcao != MenuJogoVelha.VOLTARNIVEL);
+
+	}
 
 	public static void imprimirTabuleiro(char matriz[][]) {
 		for (int i = 0; i < 5; i++) {
@@ -112,19 +138,26 @@ public class Fronteira {
 			System.out.println();
 		}
 	}
-	
-	
 
 	public static void iniciarPartida(int opcao) {
 
 		Controle.iniciarTabuleiro();
-		if (opcao == 1)
+		switch(opcao) {
+		case 1:
 			jogarHumano();
-		else
-			jogarRobo();
+			break;
+		case 2:
+			jogarRoboFacil();
+			break;
+		case 3:
+			jogarRoboDificil();
+			break;
+		default:
+			break;
+		}
+				
 	}
-	
-	
+
 	public static void reiniciar() { // neste metodo o jogador pode escolher pra
 		// qual menu voltar
 		int k = 3;
@@ -135,12 +168,12 @@ public class Fronteira {
 			System.out.println("Opcao inexistente! Tente novamente...");
 			k = input.nextInt();
 		}
-		if (k == 0){
+		if (k == 0) {
 			gerarMenuPrincipal();
 			System.exit(0);
 		}
 	}
-	
+
 	public static void jogarHumano() {
 		int i, j;
 		char simbolo = 'x';
@@ -173,12 +206,12 @@ public class Fronteira {
 				System.out.println("\nO jogador 1 venceu!\n");
 		else
 			System.out.println("\nVelhouuu :p!\n");
-		
+
 		reiniciar();
 
 	}
 
-	public static void jogarRobo() {
+	public static void jogarRoboFacil() {
 
 		int i, j;
 		char simbolo = 'x';
@@ -211,9 +244,10 @@ public class Fronteira {
 		reiniciar();
 	}
 	
-	
+	public static void jogarRoboDificil(){
+		System.out.println("\nEm construcao...\n");
+	}
 
-	
 	public static boolean jogar(int i, int j, char simbolo) {
 
 		if (verificarPosicaoInvalida(i, j) == false) {
@@ -228,8 +262,7 @@ public class Fronteira {
 			System.out.println("\n\nPosicao invalida\n\n");
 		return false;
 	}
-	
-	
+
 	public static void main(String[] args) {
 
 		gerarMenuPrincipal();

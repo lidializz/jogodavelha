@@ -10,8 +10,9 @@ public class MenuJogoVelha {
 	public static final int OPONENTE_ROBO = 2;
 	public static final int VOLTAR = 3;
 	public static final int FACIL = 1;
-	public static final int DIFICIL = 2;
-	public static final int VOLTARNIVEL = 3;
+	public static final int MEDIO = 2;
+	public static final int DIFICIL = 3;
+	public static final int VOLTARNIVEL = 4;
 
 	private static String menuStr = "\nJOGO DA VELHA JLW\n\n" + 
 									"Digite a opcao desejada:\n" + 
@@ -30,8 +31,9 @@ public class MenuJogoVelha {
 	
 	private static String menuNiveis = "\nEscolha o tipo de nivel:\n" + 
 	   										"1 - Facil\n" + 
-	   										"2 - Dificil (Em construcao...)\n" +
-	   										"3 - Voltar\n";
+	   										"2 - Medio\n"+ 
+	   										"3 - Dificil\n" +
+	   										"4 - Voltar\n";
 
 
 	

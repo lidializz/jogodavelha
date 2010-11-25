@@ -30,7 +30,7 @@ public class MenuJogoVelha {
 	
 	private static String menuNiveis = "\nEscolha o tipo de nivel:\n" + 
 	   										"1 - Facil\n" + 
-	   										"2 - Dificil (Em construcao...)\n" +
+	   										"2 - Dificil\n" +
 	   										"3 - Voltar\n";
 
 
