@@ -19,7 +19,7 @@ public class MenuJogoVelha {
 									"2 - Sair\n";
 	
 	private static String menuInterfaceStr = "\nEscolha o tipo de interface\n" + 
-											 "1 - Interface Grafica\n" + 
+											 "1 - Interface Grafica (Não implementado...)\n" + 
 											 "2 - Interface Texto\n"+ 
 											 "3 - Voltar\n";
 	
@@ -30,7 +30,7 @@ public class MenuJogoVelha {
 	
 	private static String menuNiveis = "\nEscolha o tipo de nivel:\n" + 
 	   										"1 - Facil\n" + 
-	   										"2 - Dificil (Em construcao...)\n" +
+	   										"2 - Dificil\n" +
 	   										"3 - Voltar\n";
 
 

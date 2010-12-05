@@ -245,8 +245,38 @@ public class Fronteira {
 	}
 	
 	public static void jogarRoboDificil(){
-		System.out.println("\nEm construcao...\n");
+
+		int i, j;
+		char simbolo = 'x';
+		Controle.iniciarTabuleiro();
+		while ((controle.verificarJogoTerminado() != true)
+				&& (controle.verificarTabuleiroCheio() != true)) {
+			imprimirTabuleiro(Controle.getMatriz());
+			System.out.println("\n\nJogador Humano\n");
+
+			System.out.println("Digite a linha e a coluna de sua jogada: ");
+			i = input.nextInt();
+			j = input.nextInt();
+
+			if (jogar(i, j, simbolo)) {
+				if ((controle.verificarTabuleiroCheio() != true)
+						&& (controle.verificarJogoTerminado() != true))
+					controle.jogarRoboDificil();
+			}
+		}
+
+		imprimirTabuleiro(Controle.getMatriz());
+		if (controle.verificarJogoTerminado() == true) {
+			if (controle.verificarRoboVencedor() == true)
+				System.out.println("\nO jogador computador venceu!\n");
+			else
+				System.out.println("\nO jogador humano venceu!\n");
+		} else
+			System.out.println("\nVelhouuu :p!\n");
+
+		reiniciar();
 	}
+
 
 	public static boolean jogar(int i, int j, char simbolo) {
 

@@ -53,4 +53,8 @@ public class Controle {
 		entidade.realizarJogadaRobo();
 	}
 	
+	public void jogarRoboDificil() {
+		entidade.realizarJogadaRoboDificil();
+	}
+	
 }

@@ -112,6 +112,61 @@ public class Entidade {
 		marcarJogada(i, j, 'o');
 		
 	}
+	
+	public void realizarJogadaRoboDificil(){
+		if(((matriz[0][0] == 'o') && (matriz[0][2] == 'o' )))
+			marcarJogada(1, 3, 'o');		
+		if(((matriz[0][0] == 'o') && (matriz[0][4] == 'o' )))
+			marcarJogada(1, 2, 'o');
+		if(((matriz[0][2] == 'o') && (matriz[0][4] == 'o' )))
+			marcarJogada(1, 1, 'o');
+		if(((matriz[2][0] == 'o') && (matriz[2][2] == 'o' )))
+			marcarJogada(2, 3, 'o');
+		if(((matriz[2][0] == 'o') && (matriz[2][4] == 'o' )))
+			marcarJogada(2, 2, 'o');
+		if(((matriz[2][2] == 'o') && (matriz[2][4] == 'o' )))
+			marcarJogada(2, 1, 'o');
+		if(((matriz[4][0] == 'o') && (matriz[4][2] == 'o' )))
+			marcarJogada(3, 3, 'o');
+		if(((matriz[4][0] == 'o') && (matriz[4][4] == 'o' )))
+			marcarJogada(3, 2, 'o');
+		if(((matriz[4][2] == 'o') && (matriz[4][4] == 'o' )))
+			marcarJogada(3, 1, 'o');
+		if(((matriz[0][0] == 'o') && (matriz[2][0] == 'o' )))
+			marcarJogada(3, 1, 'o');
+		if(((matriz[0][0] == 'o') && (matriz[4][0] == 'o' )))
+			marcarJogada(2, 1, 'o');
+		if(((matriz[2][0] == 'o') && (matriz[4][0] == 'o' )))
+			marcarJogada(1, 1, 'o');
+		if(((matriz[0][2] == 'o') && (matriz[2][2] == 'o' )))
+			marcarJogada(3, 2, 'o');
+		if(((matriz[0][2] == 'o') && (matriz[4][2] == 'o' )))
+			marcarJogada(2, 2, 'o');
+		if(((matriz[2][2] == 'o') && (matriz[4][2] == 'o' )))
+			marcarJogada(1, 2, 'o');
+		if(((matriz[0][4] == 'o') && (matriz[2][4] == 'o' )))
+			marcarJogada(3, 3, 'o');
+		if(((matriz[0][4] == 'o') && (matriz[4][4] == 'o' )))
+			marcarJogada(2, 3, 'o');
+		if(((matriz[2][4] == 'o') && (matriz[4][4] == 'o' )))
+			marcarJogada(1, 3, 'o');
+		if(((matriz[0][0] == 'o') && (matriz[2][2] == 'o' )))
+			marcarJogada(3, 3, 'o');
+		if(((matriz[0][0] == 'o') && (matriz[4][4] == 'o' )))
+			marcarJogada(2, 2, 'o');
+		if(((matriz[2][2] == 'o') && (matriz[4][4] == 'o' )))
+			marcarJogada(1, 1, 'o');
+		if(((matriz[4][0] == 'o') && (matriz[2][2] == 'o' )))
+			marcarJogada(1, 3, 'o');
+		if(((matriz[4][0] == 'o') && (matriz[0][4] == 'o' )))
+			marcarJogada(2, 2, 'o');
+		if(((matriz[2][2] == 'o') && (matriz[0][4] == 'o' )))
+			marcarJogada(3, 1, 'o');
+		
+		
+		realizarJogadaRobo();
+		
+	}
 }
 
 	
