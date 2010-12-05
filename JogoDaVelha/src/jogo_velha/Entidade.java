@@ -114,59 +114,227 @@ public class Entidade {
 	}
 	
 	public void realizarJogadaRoboDificil(){
-		if(((matriz[0][0] == 'o') && (matriz[0][2] == 'o' )))
-			marcarJogada(1, 3, 'o');		
-		if(((matriz[0][0] == 'o') && (matriz[0][4] == 'o' )))
-			marcarJogada(1, 2, 'o');
-		if(((matriz[0][2] == 'o') && (matriz[0][4] == 'o' )))
-			marcarJogada(1, 1, 'o');
-		if(((matriz[2][0] == 'o') && (matriz[2][2] == 'o' )))
-			marcarJogada(2, 3, 'o');
-		if(((matriz[2][0] == 'o') && (matriz[2][4] == 'o' )))
-			marcarJogada(2, 2, 'o');
-		if(((matriz[2][2] == 'o') && (matriz[2][4] == 'o' )))
-			marcarJogada(2, 1, 'o');
-		if(((matriz[4][0] == 'o') && (matriz[4][2] == 'o' )))
-			marcarJogada(3, 3, 'o');
-		if(((matriz[4][0] == 'o') && (matriz[4][4] == 'o' )))
-			marcarJogada(3, 2, 'o');
-		if(((matriz[4][2] == 'o') && (matriz[4][4] == 'o' )))
-			marcarJogada(3, 1, 'o');
-		if(((matriz[0][0] == 'o') && (matriz[2][0] == 'o' )))
-			marcarJogada(3, 1, 'o');
-		if(((matriz[0][0] == 'o') && (matriz[4][0] == 'o' )))
-			marcarJogada(2, 1, 'o');
-		if(((matriz[2][0] == 'o') && (matriz[4][0] == 'o' )))
-			marcarJogada(1, 1, 'o');
-		if(((matriz[0][2] == 'o') && (matriz[2][2] == 'o' )))
-			marcarJogada(3, 2, 'o');
-		if(((matriz[0][2] == 'o') && (matriz[4][2] == 'o' )))
-			marcarJogada(2, 2, 'o');
-		if(((matriz[2][2] == 'o') && (matriz[4][2] == 'o' )))
-			marcarJogada(1, 2, 'o');
-		if(((matriz[0][4] == 'o') && (matriz[2][4] == 'o' )))
-			marcarJogada(3, 3, 'o');
-		if(((matriz[0][4] == 'o') && (matriz[4][4] == 'o' )))
-			marcarJogada(2, 3, 'o');
-		if(((matriz[2][4] == 'o') && (matriz[4][4] == 'o' )))
-			marcarJogada(1, 3, 'o');
-		if(((matriz[0][0] == 'o') && (matriz[2][2] == 'o' )))
-			marcarJogada(3, 3, 'o');
-		if(((matriz[0][0] == 'o') && (matriz[4][4] == 'o' )))
-			marcarJogada(2, 2, 'o');
-		if(((matriz[2][2] == 'o') && (matriz[4][4] == 'o' )))
-			marcarJogada(1, 1, 'o');
-		if(((matriz[4][0] == 'o') && (matriz[2][2] == 'o' )))
-			marcarJogada(1, 3, 'o');
-		if(((matriz[4][0] == 'o') && (matriz[0][4] == 'o' )))
-			marcarJogada(2, 2, 'o');
-		if(((matriz[2][2] == 'o') && (matriz[0][4] == 'o' )))
-			marcarJogada(3, 1, 'o');
 		
-		
-		realizarJogadaRobo();
-		
+		if(bloquearJogadaHumano()==false)
+		    realizarJogadaRobo();
+	
 	}
+	
+	
+	
+	public boolean completarJogadaRobo(){//marca as jogadas para ganhar- primeiro passo
+		
+		if(((matriz[0][0] == 'o') && (matriz[0][2] == 'o' ))){ 
+			marcarJogada(1, 3, 'o');
+			return true;
+		}
+		if(((matriz[0][0] == 'o') && (matriz[0][4] == 'o' ))){
+			marcarJogada(1, 2, 'o');
+		    return true;
+		}
+		if(((matriz[0][2] == 'o') && (matriz[0][4] == 'o' ))){
+			marcarJogada(1, 1, 'o');
+			return true;
+		}
+		if(((matriz[2][0] == 'o') && (matriz[2][2] == 'o' ))){
+			marcarJogada(2, 3, 'o');
+			return true;
+		}
+		if(((matriz[2][0] == 'o') && (matriz[2][4] == 'o' ))){
+			marcarJogada(2, 2, 'o');
+			return true;
+		}
+		if(((matriz[2][2] == 'o') && (matriz[2][4] == 'o' ))){
+			marcarJogada(2, 1, 'o');
+			return true;
+		}
+		if(((matriz[4][0] == 'o') && (matriz[4][2] == 'o' ))){
+			marcarJogada(3, 3, 'o');
+			return true;
+		}
+		if(((matriz[4][0] == 'o') && (matriz[4][4] == 'o' ))){
+			marcarJogada(3, 2, 'o');
+			return true;
+		}
+		if(((matriz[4][2] == 'o') && (matriz[4][4] == 'o' ))){
+			marcarJogada(3, 1, 'o');
+			return true;
+		}
+		if(((matriz[0][0] == 'o') && (matriz[2][0] == 'o' ))){
+			marcarJogada(3, 1, 'o');
+			return true;
+		}
+		if(((matriz[0][0] == 'o') && (matriz[4][0] == 'o' ))){
+			marcarJogada(2, 1, 'o');
+			return true;
+		}
+		if(((matriz[2][0] == 'o') && (matriz[4][0] == 'o' ))){
+			marcarJogada(1, 1, 'o');
+			return true;
+		}
+		if(((matriz[0][2] == 'o') && (matriz[2][2] == 'o' ))){
+			marcarJogada(3, 2, 'o');
+			return true;
+		}
+		if(((matriz[0][2] == 'o') && (matriz[4][2] == 'o' ))){
+			marcarJogada(2, 2, 'o');
+			return true;
+		}
+		if(((matriz[2][2] == 'o') && (matriz[4][2] == 'o' ))){
+			marcarJogada(1, 2, 'o');
+			return true;
+		}
+		if(((matriz[0][4] == 'o') && (matriz[2][4] == 'o' ))){
+			marcarJogada(3, 3, 'o');
+			return true;
+		}
+		if(((matriz[0][4] == 'o') && (matriz[4][4] == 'o' ))){
+			marcarJogada(2, 3, 'o');
+			return true;
+		}
+		if(((matriz[2][4] == 'o') && (matriz[4][4] == 'o' ))){
+			marcarJogada(1, 3, 'o');
+			return true;
+		}
+		if(((matriz[0][0] == 'o') && (matriz[2][2] == 'o' ))){
+			marcarJogada(3, 3, 'o');
+			return true;
+		}
+		if(((matriz[0][0] == 'o') && (matriz[4][4] == 'o' ))){
+			marcarJogada(2, 2, 'o');
+			return true;
+		}
+		if(((matriz[2][2] == 'o') && (matriz[4][4] == 'o' ))){
+			marcarJogada(1, 1, 'o');
+			return true;
+		}
+		if(((matriz[4][0] == 'o') && (matriz[2][2] == 'o' ))){
+			marcarJogada(1, 3, 'o');
+			return true;
+		}
+		if(((matriz[4][0] == 'o') && (matriz[0][4] == 'o' ))){
+			marcarJogada(2, 2, 'o');
+			return true;
+		}
+		if(((matriz[2][2] == 'o') && (matriz[0][4] == 'o' ))){
+			marcarJogada(3, 1, 'o');
+			return true;
+		}
+		
+		return false;
+	}
+	
+	public boolean bloquearJogadaHumano(){//marca as jogadas para ganhar- primeiro passo
+		
+		
+		if(completarJogadaRobo()==false){
+		
+		if(((matriz[0][0] == 'x') && (matriz[0][2] == 'x' ))){ 
+			marcarJogada(1, 3, 'o');
+			return true;
+		}
+		if(((matriz[0][0] == 'x') && (matriz[0][4] == 'x' ))){
+			marcarJogada(1, 2, 'o');
+		    return true;
+		}
+		if(((matriz[0][2] == 'x') && (matriz[0][4] == 'x' ))){
+			marcarJogada(1, 1, 'o');
+			return true;
+		}
+		if(((matriz[2][0] == 'x') && (matriz[2][2] == 'x' ))){
+			marcarJogada(2, 3, 'o');
+			return true;
+		}
+		if(((matriz[2][0] == 'x') && (matriz[2][4] == 'x' ))){
+			marcarJogada(2, 2, 'o');
+			return true;
+		}
+		if(((matriz[2][2] == 'x') && (matriz[2][4] == 'x' ))){
+			marcarJogada(2, 1, 'o');
+			return true;
+		}
+		if(((matriz[4][0] == 'x') && (matriz[4][2] == 'x' ))){
+			marcarJogada(3, 3, 'o');
+			return true;
+		}
+		if(((matriz[4][0] == 'x') && (matriz[4][4] == 'x' ))){
+			marcarJogada(3, 2, 'o');
+			return true;
+		}
+		if(((matriz[4][2] == 'x') && (matriz[4][4] == 'x' ))){
+			marcarJogada(3, 1, 'o');
+			return true;
+		}
+		if(((matriz[0][0] == 'x') && (matriz[2][0] == 'x' ))){
+			marcarJogada(3, 1, 'o');
+			return true;
+		}
+		if(((matriz[0][0] == 'x') && (matriz[4][0] == 'x' ))){
+			marcarJogada(2, 1, 'o');
+			return true;
+		}
+		if(((matriz[2][0] == 'x') && (matriz[4][0] == 'x' ))){
+			marcarJogada(1, 1, 'o');
+			return true;
+		}
+		if(((matriz[0][2] == 'x') && (matriz[2][2] == 'x' ))){
+			marcarJogada(3, 2, 'o');
+			return true;
+		}
+		if(((matriz[0][2] == 'x') && (matriz[4][2] == 'x' ))){
+			marcarJogada(2, 2, 'o');
+			return true;
+		}
+		if(((matriz[2][2] == 'x') && (matriz[4][2] == 'x' ))){
+			marcarJogada(1, 2, 'o');
+			return true;
+		}
+		if(((matriz[0][4] == 'x') && (matriz[2][4] == 'x' ))){
+			marcarJogada(3, 3, 'o');
+			return true;
+		}
+		if(((matriz[0][4] == 'x') && (matriz[4][4] == 'x' ))){
+			marcarJogada(2, 3, 'o');
+			return true;
+		}
+		if(((matriz[2][4] == 'x') && (matriz[4][4] == 'x' ))){
+			marcarJogada(1, 3, 'o');
+			return true;
+		}
+		if(((matriz[0][0] == 'x') && (matriz[2][2] == 'x' ))){
+			marcarJogada(3, 3, 'o');
+			return true;
+		}
+		if(((matriz[0][0] == 'x') && (matriz[4][4] == 'x' ))){
+			marcarJogada(2, 2, 'o');
+			return true;
+		}
+		if(((matriz[2][2] == 'x') && (matriz[4][4] == 'x' ))){
+			marcarJogada(1, 1, 'o');
+			return true;
+		}
+		if(((matriz[4][0] == 'x') && (matriz[2][2] == 'x' ))){
+			marcarJogada(1, 3, 'o');
+			return true;
+		}
+		if(((matriz[4][0] == 'x') && (matriz[0][4] == 'x' ))){
+			marcarJogada(2, 2, 'o');
+			return true;
+		}
+		if(((matriz[2][2] == 'x') && (matriz[0][4] == 'x' ))){
+			marcarJogada(3, 1, 'o');
+			return true;
+		}
+		
+
+	}
+		
+		return false;
+	}
+	
+	
+	
+	
 }
 
 	

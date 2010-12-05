@@ -3,15 +3,15 @@
 	<section name="org.eclipse.debug.ui.SCOPED_SAVE_SELECTION_DIALOG">
 		<item value="350" key="DIALOG_WIDTH"/>
 		<item value="145" key="DIALOG_Y_ORIGIN"/>
-		<item value="350" key="DIALOG_HEIGHT"/>
 		<item value="466" key="DIALOG_X_ORIGIN"/>
+		<item value="350" key="DIALOG_HEIGHT"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_SHORTCUT_DIALOG">
 		<item value="350" key="DIALOG_WIDTH"/>
 		<item value="138" key="DIALOG_Y_ORIGIN"/>
-		<item value="335" key="DIALOG_X_ORIGIN"/>
 		<item value="350" key="DIALOG_HEIGHT"/>
+		<item value="335" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>
