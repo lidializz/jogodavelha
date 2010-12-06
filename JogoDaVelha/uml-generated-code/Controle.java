@@ -101,6 +101,9 @@ public class Controle {
 			return false;
 	}
   }
+  public void jogarRoboDificil() {
+		entidade.realizarJogadaRoboDificil();
+	}
 
 
 }
