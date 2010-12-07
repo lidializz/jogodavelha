@@ -122,6 +122,8 @@ public class Entidade {
 				break;
 			if (bloquearTriangulo() == true)  //completa 4o. passo
 				break;
+			if (jogarCentro() == true)  //completa 5o. passo
+				break;
 			realizarJogadaRobo(); //essa jogada aleatoria serve apenas pra testar o jogo(default)
 			break;
 		}
@@ -438,5 +440,16 @@ public class Entidade {
 			return true;
 		}
 		return false;
+	}
+	
+	
+	public boolean jogarCentro(){
+		
+		if (matriz[2][2] == ' '){
+			marcarJogada(2, 2, 'o');
+			return true;
+		}
+		return false;
+		
 	}
 }

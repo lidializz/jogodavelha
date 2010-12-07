@@ -16,4 +16,24 @@ Versão	  When				What				Why					 Who		   How
 0.8.0	23/11/10	8. Selecionar nível do jogo	  O jogador deve escolher o nível do jogo		William  	Umbrello/Java
 
 
+0.8.1   04/12/10        Nível Difícil - Parte 1           Completar linha ou coluna, caso duas jogadas          Josiane		Umbrello/Java
+                                                          já estiverem sido realizadas 
+
+0.8.2   05/12/10        Nível Difícil - Parte 2           Bloquear linha ou coluna, caso duas jogadas           Lídia		Umbrello/Java   
+                                                          (Jogador Humano) já estiverem sido realizadas 
+
+0.8.3   05/12/10        Nível Difícil - Parte 3           Criar a oportunidade Triângulo                        William		Umbrello/Java
+                                                           
+
+0.8.4   06/12/10        Nível Difícil - Parte 4           Bloquear Triângulo Oponente                           Josiane		Umbrello/Java
+                                                        
+
+0.8.5   06/12/10        Nível Difícil - Parte 5           Jogada no Centro                                       Lídia		Umbrello/Java
+                                                          
+                         
+0.1     06/12/10        Nível Difícil - Parte 6 e 7       Jogada no canto /Jogada na lateral                     William        Umbrello/Java
+                                                          
+  
+
 *Cada versão corresponde a um caso de uso, enumerado de acordo com a enumeração que está no umbrello.
+
