@@ -120,6 +120,8 @@ public class Entidade {
 				break;
 			if (construirTriangulo() == true)  //completa 3o. passo
 				break;
+			if (bloquearTriangulo() == true)  //completa 4o. passo
+				break;
 			realizarJogadaRobo(); //essa jogada aleatoria serve apenas pra testar o jogo(default)
 			break;
 		}
@@ -381,52 +383,46 @@ public class Entidade {
 	}
 
 	public boolean construirTriangulo() {
-		if ((matriz[0][0] == 'o') && (matriz[0][2] == ' ')
-				&& (matriz[0][4] == ' ') && (matriz[2][0] == ' ')
-				&& (matriz[2][2] == 'x') && (matriz[4][0] == 'o')) {
-			marcarJogada(1, 3, 'o');
+		
+		if ((matriz[0][0] == ' ') && (matriz[0][2] == ' ')
+				&& (matriz[0][4] == 'x') && (matriz[2][0] == ' ')
+				&& (matriz[2][2] == 'o') && (matriz[4][0] == 'x')) {
+			marcarJogada(1, 2, 'o');
 			return true;
 		}
-		if ((matriz[0][0] == 'o') && (matriz[0][2] == ' ')
-				&& (matriz[0][4] == 'o') && (matriz[2][0] == ' ')
-				&& (matriz[2][2] == 'x') && (matriz[4][0] == ' ')) {
-			marcarJogada(3, 1, 'o');
+		if ((matriz[0][0] == 'x') && (matriz[0][2] == ' ')
+				&& (matriz[0][4] == ' ') && (matriz[2][2] == 'o')
+				&& (matriz[2][4] == ' ') && (matriz[4][4] == 'x')) {
+			marcarJogada(1, 2, 'o');
 			return true;
 		}
+		if ((matriz[0][4] == 'x') && (matriz[2][2] == 'o')
+				&& (matriz[2][4] == ' ') && (matriz[4][0] == 'x')
+				&& (matriz[4][2] == ' ') && (matriz[4][4] == ' ')) {
+			marcarJogada(2, 3, 'o');
+			return true;
+		}
+		if ((matriz[0][0] == 'x') && (matriz[2][0] == ' ')
+				&& (matriz[2][2] == 'o') && (matriz[4][0] == ' ')
+				&& (matriz[4][2] == ' ') && (matriz[4][4] == 'x')) {
+			marcarJogada(2, 1, 'o');
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean bloquearTriangulo() {
+		
 		if ((matriz[0][0] == ' ') && (matriz[0][2] == ' ')
 				&& (matriz[0][4] == 'o') && (matriz[2][0] == ' ')
 				&& (matriz[2][2] == 'x') && (matriz[4][0] == 'o')) {
 			marcarJogada(1, 1, 'o');
-			return true;
-		}
-		if ((matriz[0][0] == 'o') && (matriz[0][2] == ' ')
-				&& (matriz[0][4] == 'o') && (matriz[2][2] == 'x')
-				&& (matriz[2][4] == ' ') && (matriz[4][4] == ' ')) {
-			marcarJogada(3, 3, 'o');
 			return true;
 		}
 		if ((matriz[0][0] == 'o') && (matriz[0][2] == ' ')
 				&& (matriz[0][4] == ' ') && (matriz[2][2] == 'x')
 				&& (matriz[2][4] == ' ') && (matriz[4][4] == 'o')) {
 			marcarJogada(1, 3, 'o');
-			return true;
-		}
-		if ((matriz[0][0] == ' ') && (matriz[0][2] == ' ')
-				&& (matriz[0][4] == 'o') && (matriz[2][2] == 'x')
-				&& (matriz[2][4] == ' ') && (matriz[4][4] == 'o')) {
-			marcarJogada(1, 1, 'o');
-			return true;
-		}
-		if ((matriz[0][0] == 'o') && (matriz[2][0] == ' ')
-				&& (matriz[2][2] == 'x') && (matriz[4][0] == 'o')
-				&& (matriz[4][2] == ' ') && (matriz[4][4] == ' ')) {
-			marcarJogada(3, 3, 'o');
-			return true;
-		}
-		if ((matriz[0][0] == ' ') && (matriz[2][0] == ' ')
-				&& (matriz[2][2] == 'x') && (matriz[4][0] == 'o')
-				&& (matriz[4][2] == ' ') && (matriz[4][4] == 'o')) {
-			marcarJogada(1, 1, 'o');
 			return true;
 		}
 		if ((matriz[0][0] == 'o') && (matriz[2][0] == ' ')
@@ -439,18 +435,6 @@ public class Entidade {
 				&& (matriz[2][4] == ' ') && (matriz[4][0] == 'o')
 				&& (matriz[4][2] == ' ') && (matriz[4][4] == ' ')) {
 			marcarJogada(3, 3, 'o');
-			return true;
-		}
-		if ((matriz[0][4] == ' ') && (matriz[2][2] == 'x')
-				&& (matriz[2][4] == ' ') && (matriz[4][0] == 'o')
-				&& (matriz[4][2] == ' ') && (matriz[4][4] == 'o')) {
-			marcarJogada(1, 3, 'o');
-			return true;
-		}
-		if ((matriz[0][4] == 'o') && (matriz[2][2] == 'x')
-				&& (matriz[2][4] == ' ') && (matriz[4][0] == ' ')
-				&& (matriz[4][2] == ' ') && (matriz[4][4] == 'o')) {
-			marcarJogada(3, 1, 'o');
 			return true;
 		}
 		return false;
